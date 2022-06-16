@@ -1,0 +1,98 @@
+header {
+    margin: 50px 120px;
+}
+
+header h1 {
+    font-size: 62px;
+    font-weight: 900;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+header p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    width: 38%;
+}
+
+.focus-area {
+    height: 600px;
+    margin: 0 120px;
+}
+
+.focus-area__form-box {
+    align-items: center;
+    background-color: rgb(243, 242, 239);
+    border-color: rgb(229, 234, 223);
+    border-radius: 60px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+    display: flex;
+    height: 120px;
+    margin: 0 30px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.focus-area__form-box form {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+}
+
+.focus-area__form-box div {
+    width: 100%;
+}
+
+.focus-area__form-box div label {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.focus-area__form-box div input {
+    border-radius: 48px;
+    height: 48px;
+    border: 1px solid rgb(217, 217, 217);
+    width: 100%;
+    font-size: 16px;
+    color: rgb(198, 198, 198);
+    /* padding: 0 10px; */
+}
+
+.focus-area__form-box .form-box__search-button {
+    padding-top: 30px;
+    width: min-content;
+    margin: auto;
+}
+
+.focus-area__form-box button {
+    background-color: #00C585;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.focus-area__form-box button i {
+    color: white;
+}
+
+.focus-area__image-box {
+    background: url('../images/camping.jpg');
+    background-size: cover;
+    border-radius: 24px;
+    height: 480px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    top: -70px;
+    overflow: hidden;
+}
