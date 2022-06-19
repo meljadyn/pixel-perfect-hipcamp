@@ -23,9 +23,15 @@
     text-decoration: none;
 }
 
-.nav-bar {
+.nav-bar__wrapper {
+    background-color: #f3f2ef;
     position: sticky;
     top: 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav-bar {
     background-color: #f3f2ef;
     align-items: center;
     display: flex;
@@ -34,7 +40,6 @@
     padding: 0 24px;
     width: 1232px;
     margin: 0 auto;
-    z-index: 1000;
 }
 
 .nav-bar__logo img {
