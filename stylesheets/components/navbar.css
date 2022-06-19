@@ -8,13 +8,14 @@
     font-size: 12px;
     font-weight: 650;
     height: 40px;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 .alert__terms-of-service > .terms-of-service__text {
     margin-bottom: auto;
     margin-top: auto;
+    text-align: center;
 }
 
 .alert__terms-of-service a {
@@ -27,19 +28,20 @@
     background-color: #f3f2ef;
     position: sticky;
     top: 0px;
-    z-index: 2;
     width: 100%;
+    z-index: 2;
 }
 
 .nav-bar {
-    background-color: #f3f2ef;
     align-items: center;
+    background-color: #f3f2ef;
+    box-sizing: border-box;
     display: flex;
     height: 70px;
     justify-content: space-between;
-    padding: 0 24px;
-    width: 1232px;
     margin: 0 auto;
+    overflow: hidden;
+    width: 1232px;
 }
 
 .nav-bar__logo img {
@@ -61,17 +63,17 @@
 
 .nav-bar button {
     background-color: rgb(0, 197, 133);
-    color: rgb(255, 255, 255);
     border-radius: 24px;
     border: none;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 16px;
     font-weight: 550;
     height: 36px;
+    margin-left: 24px;
     padding: 6px 16px 8px;
     transition: background 0.2s ease 0s;
     white-space: nowrap;
-    margin-left: 24px;
 }
 
 .nav-bar__link > a {
@@ -87,4 +89,31 @@
     background-color: #f3f2ef;
     color:rgb(0, 197, 133);
     outline: 1px solid rgb(0, 197, 133);
+}
+
+.nav-bar__menu-and-logo {
+    align-items: center;
+    display: flex;
+    gap: 13px;
+}
+
+.nav-bar__menu {
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    display: none;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 40px;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav-bar { padding: 0 24px; width: 100% }
+}
+
+@media screen and (max-width: 960px) {
+    .nav-bar__menu { display: flex }
+    .nav-bar__link { display: none }
 }

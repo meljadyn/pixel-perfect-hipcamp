@@ -75,3 +75,9 @@
 .safety-section--medium--left {
     margin-right: 24px;
 }
+
+@media screen and (max-width: 960px) {
+    .safety__image--large { display: none }
+    .safety--medium-sections { display: block }
+    .safety-section--medium--left { margin: 0 0 22px}
+}

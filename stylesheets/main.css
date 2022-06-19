@@ -28,6 +28,7 @@
     font-size: 62px;
     font-weight: 900;
     margin: 0;
+    text-align: center;
 }
 
 .homepage-header__text-spotlight p {
@@ -36,10 +37,6 @@
     margin: 0;
     text-align: center;
     width: 60%;
-}
-
-.homepage-header__focus-area {
-    height: 600px;
 }
 
 .focus-area__form-box {
@@ -51,17 +48,19 @@
     border-width: 1px;
     box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
     display: flex;
-    height: 120px;
     margin: 0 30px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 20px 48px
+}
+
+.form-box__search {
+
+ flex-basis: 150%
 }
 
 .focus-area__form-box form {
-    align-content: center;
     display: flex;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -73,7 +72,8 @@
     display: block;
     font-size: 14px;
     font-weight: bold;
-    margin: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
@@ -81,9 +81,13 @@
     border-radius: 48px;
     border: 1px solid rgb(217, 217, 217);
     color: rgb(198, 198, 198);
-    font-size: 16px;
     height: 48px;
     width: 100%;
+}
+
+::placeholder {
+    font-size: 16px;
+    padding-left: 15px;
 }
 
 .focus-area__form-box .form-box__search-button {
@@ -94,7 +98,7 @@
 
 .focus-area__form-box button {
     background-color: #00C585;
-    border-radius: 50%;
+    border-radius: 24px;
     border: none;
     color: white;
     height: 48px;
@@ -117,10 +121,10 @@
     background-size: cover !important;
     background: url('../images/camping.jpg');
     border-radius: 24px;
+    bottom: 70px;
     height: 480px;
     overflow: hidden;
     position: relative;
-    top: -70px;
     width: 100%;
     z-index: -1;
 }
@@ -141,4 +145,32 @@
 
 .help-button button i {
     margin-right: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+    .homepage-header__text-spotlight { width: 100% }
+}
+
+@media screen and (max-width: 960px) {
+    .focus-area__form-box { margin: 0 }
+
+    .form-box__search { flex: 0 1 100% }
+    .form-box__dates, .form-box__guests { flex-basis: 48% }
+    .focus-area__form-box form { flex-wrap: wrap ; gap: 0}
+    .form-box__search-button { flex: 0 1 100% ; padding: 0}
+    .form-box__search-button button { width: 100% }
+    .focus-area__image-box { height: 300px }
+    .focus-area__form-box { border: 0 ; border-radius: 16px ; box-shadow: none; padding: 0 0 20px}
+
+    .help-button .help-text { display: none }
+    .help-button button { width: 46px }
+    .help-button button i { margin: 0 }
+}
+
+@media screen and (max-width: 600px) {
+    .homepage-header__text-spotlight { height: auto }
+    .homepage-header__text h1 { font-size: 40px }
+    .homepage-header__text p { font-size: 18px ; font-weight: 400; width: auto }
+
+    .form-box__dates, .form-box__guests { flex-basis: 100% }
 }

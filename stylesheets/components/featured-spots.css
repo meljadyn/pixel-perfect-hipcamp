@@ -1,5 +1,6 @@
 .featured-places {
     display: grid;
+    gap: 24px;
     grid-template-columns: 1fr 1fr;
     height: 500px;
 }
@@ -22,7 +23,6 @@
     grid-auto-flow: column;
     grid-template-rows: 2fr 1fr;
     height: 100%;
-    width: 604px;
 }
 
 .featured-place__box.featured-place--right {
@@ -30,13 +30,13 @@
 }
 
 .featured-place__img.featured-place--left {
-    background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/xb3ckqp4oa38fbfbbzfi.jpg');
     background-size: cover;
+    background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/xb3ckqp4oa38fbfbbzfi.jpg');
 }
 
 .featured-place__img.featured-place--right {
-    background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/n7xhznj35fmtke1oxsey.jpg');
     background-size: cover;
+    background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/n7xhznj35fmtke1oxsey.jpg');
 }
 
 .featured-place__img {
@@ -134,18 +134,22 @@
 }
 
 .wide-feature__description {
-    margin: 20px 0;
     font-weight: 450;
+    margin: 20px 0;
 }
 
 .wide-feature__button button {
     background-color: white;
     border-radius: 24px;
     border: none;
+    color: #D84627;
     color: black;
     font-size: 16px;
+    font-weight: bold;
     height: 48px;
     width: 164px;
-    font-weight: bold;
-    color: #D84627
+}
+
+@media screen and (max-width: 960px) {
+    .featured-places { display: block ; height: auto }
 }

@@ -54,20 +54,25 @@ footer ul a {
 }
 
 .footer__black-box-section {
-    height: 66px;
+    align-items: center;
     background: black;
     color: white;
     display: flex;
-    align-items: center;
+    height: 66px;
 }
 
 .footer__black-box {
     box-sizing: border-box;
     margin: 0 auto;
-    width: 1280px;
     padding: 0 24px;
+    width: 1280px;
 }
 
 .footer-black-box-text {
     text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .footer__columns { display: block }
+    .footer__comprehensive { margin-top: 20px }
 }
