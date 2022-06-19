@@ -71,6 +71,7 @@
     font-weight: 550;
     height: 36px;
     margin-left: 24px;
+    margin-right: 1px;
     padding: 6px 16px 8px;
     transition: background 0.2s ease 0s;
     white-space: nowrap;
