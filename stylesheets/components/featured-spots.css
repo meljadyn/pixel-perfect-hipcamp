@@ -31,10 +31,12 @@
 
 .featured-place__img.featured-place--left {
     background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/xb3ckqp4oa38fbfbbzfi.jpg');
+    background-size: cover;
 }
 
 .featured-place__img.featured-place--right {
     background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/n7xhznj35fmtke1oxsey.jpg');
+    background-size: cover;
 }
 
 .featured-place__img {
