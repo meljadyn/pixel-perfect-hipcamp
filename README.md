@@ -1,6 +1,6 @@
 # Hipcamp  Recreation
 
-See it deployed here: [Hipcamp Recreation on Github Pages](https://meljadyn.github.io/pixel-perfect-hipcamp/)
+See it deployed here: [Hipcamp Recreation on Netlify](https://meljadyn-recreation.netlify.app/)
 
 This is a recreation of the homepage of Hipcamp made completely from scratch. It features only HTML and CSS with no frameworks, and therefore any elements using JavaScript or other languages are excluded. This is a front-end layout demo, and so I did exclude specific menu and button functionalities, instead just placing and styling the menu buttons.
 
