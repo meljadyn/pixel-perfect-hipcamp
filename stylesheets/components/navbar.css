@@ -8,6 +8,7 @@
     font-size: 12px;
     font-weight: 650;
     height: 40px;
+    width: 100%;
     justify-content: center;
 }
 
@@ -23,6 +24,9 @@
 }
 
 .nav-bar {
+    position: sticky;
+    top: 0px;
+    background-color: #f3f2ef;
     align-items: center;
     display: flex;
     height: 70px;
@@ -30,6 +34,7 @@
     padding: 0 24px;
     width: 1232px;
     margin: 0 auto;
+    z-index: 1000;
 }
 
 .nav-bar__logo img {
@@ -62,6 +67,11 @@
     transition: background 0.2s ease 0s;
     white-space: nowrap;
     margin-left: 24px;
+}
+
+.nav-bar__link > a {
+    border-bottom: 2px solid #f3f2ef;
+    transition: border 0.15s linear;
 }
 
 .nav-bar__link > a:hover {

@@ -1,9 +1,13 @@
-.homepage-header {
+.main {
+    box-sizing: border-box;
+    max-width: 1280px;
     margin: 0 auto;
-    width: 1232px;
     padding: 0 24px;
 }
 
+.homepage-header {
+    margin: 0 auto;
+}
 
 .homepage-header__text {
     display: flex;
@@ -14,6 +18,7 @@
 
 .homepage-header__text-spotlight {
     height: 274px;
+    width: 1232px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +85,6 @@
     width: 100%;
     font-size: 16px;
     color: rgb(198, 198, 198);
-    /* padding: 0 10px; */
 }
 
 .focus-area__form-box .form-box__search-button {
@@ -95,10 +99,19 @@
     border-radius: 50%;
     width: 48px;
     height: 48px;
+    color: white;
+    transition: color 0.1s linear;
+    transition: background-color 0.1s linear;
+}
+
+.focus-area__form-box button:hover {
+    background-color: white;
+    border: 2px solid #00C585;
+    color: #00C585;
 }
 
 .focus-area__form-box button i {
-    color: white;
+    padding-bottom: 5px;
 }
 
 .focus-area__image-box {

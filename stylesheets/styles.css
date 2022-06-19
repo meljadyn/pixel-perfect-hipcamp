@@ -2,6 +2,6 @@
 
 
 @import url('./global.css');
-
+@import url('./components/featured-spots.css');
 @import url('./components/navbar.css');
 @import url('./main.css');

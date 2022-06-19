@@ -1,0 +1,149 @@
+.featured-places {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+
+.featured-place {
+    height: 444px;
+    margin: 0;
+    padding: 12px 0;
+    position: relative;
+    top: 0px;
+    transition: top ease 0.3s;
+}
+
+.featured-place:hover {
+    top: -10px;
+}
+
+.featured-place__box {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 2fr 1fr;
+    height: 100%;
+    width: 604px;
+}
+
+.featured-place__box.featured-place--right {
+    float: right;
+}
+
+.featured-place__img.featured-place--left {
+    background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/xb3ckqp4oa38fbfbbzfi.jpg');
+}
+
+.featured-place__img.featured-place--right {
+    background: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/n7xhznj35fmtke1oxsey.jpg');
+}
+
+.featured-place__img {
+    border-radius: 24px 24px 0px 0px
+}
+
+.featured-place__text {
+    border-radius: 0px 0px 24px 24px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.17);
+    color: white;
+    padding: 24px 32px;
+}
+
+.featured-place__text.featured-place--left {
+    background-color: #bc492f;
+}
+
+.featured-place__text.featured-place--right {
+    background-color: #7c7c37;
+}
+
+.featured-place__tag {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.featured-place__description {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.featured-place__tagline {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.featured-place__button button {
+    background-color: white;
+    border-radius: 24px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+}
+
+.featured-place__button.featured-place--left button {
+    color: #bc492f;
+}
+
+.featured-place__button.featured-place--right button {
+    color: #7c7c37;
+}
+
+.wide-feature {
+    height: 760px;
+    padding: 40px 0;
+    position: relative;
+    top: 0px;
+    transition: top 0.3s ease;
+}
+
+.wide-feature__image {
+    background-image: url('https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1920,q_auto/campground-photos/yene977lfve4yhhnokuh.jpg');
+    background-size: cover;
+    border-radius: 24px;
+    height: 100%;
+}
+
+.wide-feature:hover {
+    top: -10px;
+}
+
+.wide-feature__text {
+    background-color: #D84627;
+    border-radius: 24px;
+    bottom: 90px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 302px;
+    justify-content: space-around;
+    left: 50px;
+    max-width: 372px;
+    padding: 29px 24px;
+    position: absolute;
+    z-index: 1;
+}
+
+.wide-feature__tagline {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wide-feature__description {
+    margin: 20px 0;
+    font-weight: 450;
+}
+
+.wide-feature__button button {
+    background-color: white;
+    border-radius: 24px;
+    border: none;
+    color: black;
+    font-size: 16px;
+    height: 48px;
+    width: 164px;
+    font-weight: bold;
+    color: #D84627
+}
