@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/a541783433.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="https://www.hipcamp.com/journal/wp-content/uploads/2019/06/AppIcon-2238dd91cef1a13c8679bbf84be7bd1d10ef512b158c6985017168d7c726036d.png">
   <link rel="stylesheet" href="./stylesheets/styles.css">
   <title>Pixel Perfect | Hipcamp</title>
 </head>
 <body>
   <div class="alert__terms-of-service">
-    <span>We've updated our terms of service. Learn more <a href="#">here</a>.</span>
+    <span class="terms-of-service__text">We've updated our terms of service. Learn more <a href="#">here</a>.</span>
   </div>
 
   <nav class="nav-bar">
@@ -45,39 +46,49 @@
     </div>
   </nav>
 
-  <header>
-    <h1>Find yourself outside.</h1>
-    <p>Discover and book tent camping, RV parks, cabins, treehouses, and glamping.</p>
-  </header>
+  <div class="homepage-header">
+
+    <header class="homepage-header__text-spotlight">
+      <div class="homepage-header__text">
+        <h1>Find yourself outside.</h1>
+        <p>Discover and book tent camping, RV parks, cabins, treehouses, and glamping.</p>
+      </div>
+    </header>
 
 
-  <div class="focus-area">
+    <div class="homepage-header__focus-area">
 
-    <div class="focus-area__form-box">
+      <div class="focus-area__form-box">
 
-      <form>
-        <div class="form-box__search">
-          <label for="search">Where To?</label>
-          <input id="search" type="search" placeholder="  Try Yosemite, Napa, Moab...">
-        </div>
-        <div class="form-box__dates">
-          <label for="dates">Dates</label>
-          <input id="dates" type="text" placeholder='  Enter dates'>
-        </div>
-        <div class="form-box__guests">
-          <label for="guests">Guests</label>
-          <input id="guests" type="text" placeholder="  Add guests">
-        </div>
-        <div class="form-box__search-button">
-          <button type="submit">
-            <i class="fa fa-magnifying-glass fa-lg"></i>
-          </button>
-        </div>
-      </form>
+        <form>
+          <div class="form-box__search">
+            <label for="search">Where To?</label>
+            <input id="search" type="search" placeholder="  Try Yosemite, Napa, Moab...">
+          </div>
+
+          <div class="form-box__dates">
+            <label for="dates">Dates</label>
+            <input id="dates" type="text" placeholder='  Enter dates'>
+          </div>
+
+          <div class="form-box__guests">
+            <label for="guests">Guests</label>
+            <input id="guests" type="text" placeholder="  Add guests">
+          </div>
+
+          <div class="form-box__search-button">
+            <button type="submit">
+              <i class="fa fa-magnifying-glass fa-lg"></i>
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="focus-area__image-box">
+      </div>
+
     </div>
-    <div class="focus-area__image-box">
-    </div>
-
   </div>
 
 </body>

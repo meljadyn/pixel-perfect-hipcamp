@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.alert__terms-of-service > span {
+.alert__terms-of-service > .terms-of-service__text {
     margin-bottom: auto;
     margin-top: auto;
 }
@@ -28,7 +28,8 @@
     height: 70px;
     justify-content: space-between;
     padding: 0 24px;
-    margin: 0 120px
+    width: 1232px;
+    margin: 0 auto;
 }
 
 .nav-bar__logo img {
@@ -43,7 +44,7 @@
     text-decoration: none;
 }
 
-.nav-bar__links div {
+.nav-bar__links .nav-bar__link {
     margin: auto 0;
     padding: 0 12px;
 }
@@ -65,4 +66,10 @@
 
 .nav-bar__link > a:hover {
     border-bottom: 2px solid rgb(0, 197, 133);
+}
+
+.nav-bar__links button:hover {
+    background-color: #f3f2ef;
+    color:rgb(0, 197, 133);
+    outline: 1px solid rgb(0, 197, 133);
 }
