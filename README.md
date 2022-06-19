@@ -1,4 +1,11 @@
-# Pixel Perfection
-This is a pixel-perfect recreation of the homepage of Hipcamp. It features only HTML and CSS with no frameworks, and therefore any elements using JavaScript or other languages are excluded.
+# Hipcamp  Recreation
 
-This is a practice to ensure that I am able to make precise and specific decisions regarding the layout of my website. I will have no excuse to modify a design in such a way that the CSS becomes easier for me to write or master.
+See it deployed here: [Hipcamp Recreation on Github Pages](https://meljadyn.github.io/pixel-perfect-hipcamp/)
+
+This is a recreation of the homepage of Hipcamp. It features only HTML and CSS with no frameworks, and therefore any elements using JavaScript or other languages are excluded. This is a front-end layout demo, and so I did exclude specific menu and button functionalities, instead just placing and styling the menu buttons.
+
+This recreation features accurate breakpoints for smaller screens, as well as accurate hover states. 
+
+This is a practice to ensure that I am able to make precise and specific decisions regarding the layout of my website.
+
+Please note that this homepage is abridged for time. I added every section that I thought would bring a unique or differing challenge to the table, but no more than that.
